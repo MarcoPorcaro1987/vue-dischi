@@ -14,11 +14,12 @@
 // Common
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: $mainFont;
 }
 
 main{
     background-color: $secondaryColor;
+    padding: 1.875rem 0;
 }
 .container {
     max-width: $containerSize;
