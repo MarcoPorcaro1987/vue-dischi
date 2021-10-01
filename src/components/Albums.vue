@@ -1,7 +1,7 @@
 <template>
   <div class="container albums-cont" >
        <div class="album-cont" v-for="(elm, index) in albums" :key="index">
-            <Album />
+            <Album :info="elm" />
       </div>
   </div>
 </template>
@@ -34,9 +34,9 @@ export default {
 .albums-cont{
     display: flex;
     flex-wrap: wrap;
-    gap: .625rem 1.25rem;
+    gap: .9375rem 1.5625rem;
     .album-cont{
-        width: calc(100% / 5 - 1.25rem);
+        width: calc(100% / 5 - 1.5625rem);
     }
 }
 </style>
